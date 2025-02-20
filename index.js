@@ -1,6 +1,7 @@
 'use strict'
 const express = require('express')
 require('dotenv').config();
+const cors = require("cors");
 const httpErrors = require('http-errors')
 const pino = require('pino')
 const pinoHttp = require('pino-http')
@@ -50,6 +51,9 @@ module.exports = function main (options, cb) {
 
   // Common middleware
   // app.use(/* ... */)
+
+  app.use(cors());
+
   app.use(pinoHttp({ logger }))
       
   app.use('/', require('./routes'));
