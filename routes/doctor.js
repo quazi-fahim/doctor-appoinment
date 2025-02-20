@@ -1,8 +1,9 @@
 const express=require('express');
-const { getAllDoctors } = require('../controllers/doctorController');
+const { getAllDoctors, getAvailableSlots } = require('../controllers/doctorController');
 
 const router=express.Router();
 
-router.get('/getDoctors', getAllDoctors)
+router.get('/', getAllDoctors)
+router.get('/:id/slots', getAvailableSlots)
 
 module.exports=router;
