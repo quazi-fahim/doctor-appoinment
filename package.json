@@ -1,0 +1,26 @@
+{
+  "name": "baby-step-backend",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Faheem Ahmad",
+  "keywords": [
+    "ninja-coder"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/app",
+    "dev": "nodemon ./bin/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9",
+    "pino": "^9.6.0",
+    "pino-http": "^10.4.0",
+    "pino-pretty": "^13.0.0"
+  }
+}
