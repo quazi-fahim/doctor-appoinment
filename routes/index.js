@@ -5,6 +5,6 @@ const router=express.Router();
 
 router.get('/', home);
 router.use('/doctors', require('./doctor'));
-router.use('/appoinments', require('./appoinment'));
+router.use('/appointments', require('./appoinment'));
 
 module.exports=router;

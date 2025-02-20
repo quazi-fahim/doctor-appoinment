@@ -53,7 +53,7 @@ module.exports = function main (options, cb) {
   // app.use(/* ... */)
 
   app.use(cors());
-
+  app.use(express.json());
   app.use(pinoHttp({ logger }))
       
   app.use('/', require('./routes'));
